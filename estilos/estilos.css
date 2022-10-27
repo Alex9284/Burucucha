@@ -19,8 +19,9 @@ p{
 }
 body{
     background: url(../img/fondo.jpg);
+  
     font-family: 'Open Sans', sans-serif;
-    opacity: 80%;
+    opacity: 90%;
     height: 800px;
     height: 800px;
     border: inherit;
@@ -29,7 +30,8 @@ body{
 #container{
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    border: solid 8px black;
+    border: solid 8px lightgreen;
+    border-radius: 10px;
     color: black;
     background-color: white;
     width: 1250px;
@@ -47,13 +49,113 @@ header{
     padding: 0.3em;
     margin: 0 auto;
 }
-.nav{
-    font-family: 'Open Sans', sans-serif;
-    border: solid 8px orange;
-    background: black;
-    color: white;
-    padding: 10px 30px;
- }
+nav {
+    top: 150px;
+    position: absolute;
+     margin:0 auto;
+     width: 1200px;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav > ul {
+	display:table;
+	overflow:hidden;
+	width:100%;
+	background:#000;
+	position: relative;
+}
+
+nav > ul li {
+	display:table-cell;
+}
+
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+
+nav > ul > li > ul {
+	display:block;
+	position: absolute;
+	background:#000;
+	left:0;
+	right:0;
+	height:0%;
+	overflow: hidden;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+	background:#5DA5A2;
+}
+
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	left:0px;
+	position:absolute;
+	top:-55px;
+	width:100%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+
+
+
+/*Colores*/
+nav ul li a .primero {
+	background:#0E5061;
+}
+
+nav ul li a .segundo {
+	background:#5DA5A2;
+}
+
+nav ul li a .tercero {
+	background:#F25724;
+}
+
+nav ul li a .cuarto {
+	background:#174459;
+}
+
+nav ul li a .quinto {
+	background:#37A4D9;
+}
+
+
  a:link {
     color: blueviolet;
   
@@ -219,271 +321,16 @@ display: inline;
 footer {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    border: dotted purple;
+    border-radius: 10px;
     background-color: black;
-    height: 45px;
+    opacity: 80%;
+    height: 80px;
     width: 1185px;
     color: white;
     font-size: 25px;
     text-align: center;
-    padding: 0.1em;	
+    padding: 0.3em;	
 }
 
-@media (max-width: 498px)
-{
-    body{
-        background: url(../img/fondo.jpg);
-        font-family: 'Open Sans', sans-serif;
-        opacity: 80%;
-        height: 600px;
-        height: 600px;
-        border: inherit;
-        color: white;
-    }
-    #container{
-        font-family: 'Open Sans', sans-serif;
-        margin: 0 auto;
-        border: solid 8px black;
-        color: black;
-        background-color: white;
-        width: 850px;
-        height: 1000px;
-        text-align: center;
-        padding: 1px;
-    }
-    header{
-        font-family: 'Open Sans', sans-serif;
-        background: url(../img/banner.png);
-        width: 750px;
-        height: 75px;
-        font: oblique bold;
-        font-size: 20px;
-        padding: 0.3em;
-        margin: 0 auto;
-    }
-    .nav{
-        font-family: 'Open Sans', sans-serif;
-        border: solid 8px orange;
-        background: black;
-        color: white;
-        padding: 10px 30px;
-     }
-  
-    section {
-        font-family: 'Open Sans', sans-serif;
-        margin-left: 50px;
-      text-align: center;
-        color: black;
-        width: 720px;
-         padding: 1em;
-        margin: 1em;
-    }
-    
-   
-        form {
-        font-family: 'Open Sans', sans-serif;
-        width: 200px;
-        margin: 10px auto;
-        padding: 10px 20px;
-        background: #f4f7f8;
-        border-radius: 8px;
-        }
-    
-    
-    input[type="text"],
-    input[type="email"],
-    input[type="date"],
-    input[type="pais"],
-    textarea,
-    select {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 400px;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-    }
-    
-    
-    select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-    }
-    
-    button {
-    
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #4bc970;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 5px;
-    width: 50%;
-    border: 1px solid #3ac162;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
-    }
-    
-    
-    
-    label {
-    font-family: 'Open Sans', sans-serif;
-    display: block;
-    margin-bottom: 8px;
-    }
-    
-    label.light {
-    font-weight: 300;
-    display: inline;
-    }
-    
-    footer {
-        margin: 0 auto;
-        font-family: 'Open Sans', sans-serif;
-        background-color: black;
-        height: 45px;
-        width: 850px;
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        padding: 0.1em;	
-}
-
-}
-@media (max-height: 498px)
-{
-    body{
-        background: url(../img/fondo.jpg);
-        font-family: 'Open Sans', sans-serif;
-        opacity: 80%;
-        height: 600px;
-        height: 600px;
-        border: inherit;
-        color: white;
-    }
-    #container{
-        font-family: 'Open Sans', sans-serif;
-        margin: 0 auto;
-        border: solid 8px black;
-        color: black;
-        background-color: white;
-        width: 850px;
-        height: 1000px;
-        text-align: center;
-        padding: 1px;
-    }
-    header{
-        font-family: 'Open Sans', sans-serif;
-        background: url(../img/banner.png);
-        width: 750px;
-        height: 75px;
-        font: oblique bold;
-        font-size: 20px;
-        padding: 0.3em;
-        margin: 0 auto;
-    }
-    .nav{
-        font-family: 'Open Sans', sans-serif;
-        border: solid 8px orange;
-        background: black;
-        color: white;
-        padding: 10px 30px;
-     }
-  
-    section {
-        font-family: 'Open Sans', sans-serif;
-        margin-left: 50px;
-      text-align: center;
-        color: black;
-        width: 720px;
-         padding: 1em;
-        margin: 1em;
-    }
-    
-   
-        form {
-        font-family: 'Open Sans', sans-serif;
-        width: 200px;
-        margin: 10px auto;
-        padding: 10px 20px;
-        background: #f4f7f8;
-        border-radius: 8px;
-        }
-    
-    
-    input[type="text"],
-    input[type="email"],
-    input[type="date"],
-    input[type="pais"],
-    textarea,
-    select {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 400px;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-    }
-    
-    
-    select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-    }
-    
-    button {
-    
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #4bc970;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 5px;
-    width: 50%;
-    border: 1px solid #3ac162;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
-    }
-    
-    
-    
-    label {
-    font-family: 'Open Sans', sans-serif;
-    display: block;
-    margin-bottom: 8px;
-    }
-    
-    label.light {
-    font-weight: 300;
-    display: inline;
-    }
-    
-    footer {
-        margin: 0 auto;
-        font-family: 'Open Sans', sans-serif;
-        background-color: black;
-        height: 45px;
-        width: 850px;
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        padding: 0.1em;	
-}
-
-}
 
