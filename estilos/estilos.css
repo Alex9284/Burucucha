@@ -3,7 +3,7 @@
 	src: url(../fonts/Open\ Sans\ Regular.ttf);
 }
 h1{
-    color: black;
+  
     margin-top: 40px;
 }
 h2{
@@ -40,27 +40,34 @@ body{
     padding: 1px;
 }
 header{
+    margin: 5px auto;
+    margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
-    background: url(../img/banner.png);
-    width: 1170px;
+    border: solid purple;
+    border-radius: 10px;
+    background-color: lightgreen;
+    opacity: 80%;
     height: 150px;
-    font: oblique bold;
-    font-size: 20px;
-    padding: 0.3em;
-    margin: 0 auto;
+    width: 1170px;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+   padding: 10px auto;
 }
 nav {
     top: 150px;
-    position: absolute;
+       position: absolute;
      margin:0 auto;
      width: 1200px;
 }
 
 nav ul {
 	list-style:none;
+ 
 }
 
 nav > ul {
+
 	display:table;
 	overflow:hidden;
 	width:100%;
@@ -72,7 +79,7 @@ nav > ul li {
 	display:table-cell;
 }
 
-/*Sub-menu*/
+
 nav > ul > li:hover > ul {
 	display:block;
 	height:100%;
@@ -322,7 +329,7 @@ footer {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     border: dotted purple;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: black;
     opacity: 80%;
     height: 80px;
